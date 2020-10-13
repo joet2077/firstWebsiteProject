@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+@keyframes transitionIN {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes indexarrow {
+    0% {
+        top: 218px;
+        left: 150px;
+    }
+    50% {
+        top: 218px;
+        left: 100px;
+    }
+    100% {
+        top: 218px;
+        left: 150px;
+    }
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    width: 700px;
+}
+
+.maintext hr {
+    width: 350px;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    padding: 5px;
+}
+
+#arrow {
+    font-size: 100px;
+    position: relative;
+    top: 218px;
+    left: 150px;
+    animation: indexarrow 1s infinite;
+}
+
+#arrow :link {
+    text-decoration: none;
+    color: #000;
+}
+
+#arrow :visited {
+    text-decoration: none;
+    color: #000;
+}
+
+#arrow :hover {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+#arrow :active {
+    text-decoration: none;
+    color: red;
+}
+
+#flexcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headercontainer {
+    display: flex;
+    max-width: 100%;
+    min-width: 1000px;
+    border-bottom: 0.5px solid;
+    line-height: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+}
+
+#indexcontent {
+    display: flex;
+    height: 100%;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+    animation: transitionIN 0.75s;
+}
+
+.logo {
+    flex: 6;
+    padding-left: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    max-width: 100%;
+    min-width: 300px;
+}
+
+.logo a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo a:active {
+    text-decoration: none;
+    color: red;
+}
+
+.navbar {
+    flex: 5;
+    padding-right: 70px;
+    word-spacing: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 0px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:link {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.navbar li a:visited {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.navbar li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar li a:active {
+    text-decoration: underline;
+    color: red;
+}
+
+#indexphoto {
+    position: relative;
+    top: 120px;
+    left: 10px;
+}
+
+.maintext {
+    position: relative;
+    top: 200px;
+    left: 20px;
+}
+
+.socialmedia {
+    position: relative;
+    top: 10px;
+}
+
+.socialmedia img {
+    width: 55px;
+    height: auto;
+}
+
+.normalcontent {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: transitionIN 0.75s;
+    background-color: #f0f0f0;
+}
+
+.normalcontent h2 {
+    line-height: 10px;
+    padding-top: 10px;
+}
+
+.normalcontent p {
+    font-weight: lighter;
+}
+
+.pdfcontainer {
+    text-align: center;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: transitionIN 0.75s;
+    width: 100%;
+    height: 100%;
+}
+
+.doccontainer {
+    height: 100vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.help {
+    width: 640px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 2px;
+}
+
+.videowrapper {
+    padding-top: 20px;
+}
+
+.photocontent {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    animation: transitionIN 0.75s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#photos {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 700px;
+}
+
+#photos img {
+    border: solid 2px black;
+}
+
+.contactsocialmedia {
+    padding-top: 20px;
+}
+
+.contactsocialmedia img {
+    padding-top: 10px;
+    width: 55px;
+    height: auto;
+}
